@@ -1,12 +1,12 @@
 pipeline {
     agent any
 
-    environment {
-        IMAGE_NAME = "my-website-image"
-        CONTAINER_PORT = "82"
-        HOST_PORT = "82"
-        REPO_URL = "https://github.com/hshar/website.git"
-    }
+   environment {
+    BRANCH_NAME = "master"
+    IMAGE_NAME = "my-website-image"
+    REPO_URL = "https://github.com/sanjai-athidya/CI-CD"
+}
+
 
     stages {
         stage('Clone Website Code') {
