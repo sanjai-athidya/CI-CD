@@ -12,7 +12,8 @@ pipeline {
         stage('Clone Website Code') {
             steps {
                 dir('website') {
-                    git branch: "${env.BRANCH_NAME}", url: "${REPO_URL}"
+                    git branch: "master", url: "${REPO_URL}"
+
                 }
             }
         }
